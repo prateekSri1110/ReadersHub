@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Readers Hub - Poem</title>
+    <link rel="icon" href="mainlogo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:600&display=swap');
+        .heart-btn {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .content {
+            padding: 7px 10px;
+            display: flex;
+            border: 2px solid #eae2e1;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .content.heart-active {
+            border-color: #f9b9c4;
+            background: #fbd0d8;
+        }
+        
+        .heart {
+            position: absolute;
+            background: url("heart.png") no-repeat;
+            background-position: left;
+            background-size: 100%;
+            height: 100px;
+            width: 30px;
+            top: 50%;
+            left: 21%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .text {
+            font-size: 21px;
+            margin-left: 30px;
+            color: grey;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .numb:before {
+            content: '1';
+            font-size: 21px;
+            margin-left: 7px;
+            font-weight: 600;
+            color: #9C9496;
+            font-family: sans-serif;
+        }
+        
+        .numb.heart-active:before {
+            content: '2';
+            color: #000;
+        }
+        
+        .text.heart-active {
+            color: #000;
+        }
+        
+        .heart.heart-active {
+            animation: animate .8s steps(28) 1;
+            background-position: right;
+        }
+        
+        @keyframes animate {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+    </style>
+</head>
+
+<body background="background.jpg" class="responsive" style="background-repeat: repeat; background-size: contain;">
+    <div class="container">
+        <div class="row p-lg-1 mt-3 bg-gradient" style="width: 92%; position: fixed;">
+            <div class="col-sm-5" style="width: 50%">
+                <a style="text-decoration: none; color: #000;" href="option.html">
+                    <img style="width: 10%;" src="back.png" alt="back">
+                    <B>POEM</B>
+                </a>
+            </div>
+            <div class="col-lg-5" style="width: 50%">
+                <a href="about.html">
+                    <img src="mainlogo1.png" style="margin-left: 90%; width: 12%; height: auto;" alt="logo"></a>
+            </div>
+        </div>
+        <div class="container p-5 mt-1">
+            <center><br><br>
+                <u><h1>?????</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 15%;" src="p-1.png">
+            </center>
+            <p>
+                <br> What to feel and how to feel?
+                <br> When you don’t know what’s the deal.
+                <br> Where to go and where to rest?
+                <br> When you don’t know what’s the best.
+                <br>
+                <br> What to learn and how to learn?
+                <br> When you are told just to earn.
+                <br> Where to find and what to find?
+                <br> When you know this world isn’t so kind.
+                <br>
+                <br> Whom to ask and how to ask?
+                <br> When you know they all wear a mask.
+                <br> Where to share and where to lie?
+                <br> When you are told one day you’ll die.
+                <br>
+                <br> What to do and how to do?
+                <br> When telling the truth is difficult too.
+                <br> Where to run and where to hide?
+                <br> When there’s moat on either side.
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br><br>
+            <script>
+                $(document).ready(function() {
+                    $('.content').click(function() {
+                        $('.content').toggleClass("heart-active")
+                        $('.text').toggleClass("heart-active")
+                        $('.numb').toggleClass("heart-active")
+                        $('.heart').toggleClass("heart-active")
+                    });
+                });
+            </script>
+            <hr>
+            <center>
+                <u><h1>MOVE ON!</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <br>
+                <img style="width: 20%;" src="p-2.jpeg">
+            </center>
+            <p>
+                <br>Time flies, you sit under the sky
+                <br> And watching it go, you just cry
+                <br> You watch that moon and remember him
+                <br> That why didn’t he even give it a try
+                <br>
+                <br> There you forget to notice those stars
+                <br> Who could have helped your scars to dry
+                <br> You think every word he said to you
+                <br> And calculate how much of it was a lie
+                <br>
+                <br> You forget to appreciate happy times
+                <br> And never told him a healthy goodbye
+                <br> You put up big barriers in front of you
+                <br> And pretend that you need no guy
+                <br>
+                <br> Somewhere you want to strongly believe
+                <br> Forever isn’t always a lie
+                <br> You want to believe that a guy will come
+                <br> And Things will change with just his hii
+                <br>
+                <br> You’ll want to believe that love isn’t bad
+                <br> When you’ll think if he should get a reply
+                <br> You’ll want to believe he’ll stay by your side
+                <br> Even in bad state you’ll deny
+                <br>
+                <br> Maybe you’ll compare him to your ex
+                <br> And think what if you retry
+                <br> But you couldn’t and should not go back
+                <br> To live what was just a lie
+                <br>
+                <br> You have to open up and let people in
+                <br> As it will be time to get up and fly!!
+                <br> You must believe love was not that failed
+                <br> So, you must not give up and just try!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>Life!?</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-3.jpeg">
+            </center>
+            <p>
+                <br>There was a time where we had no teeth,
+                <br>With no fear, we have to earn to eat!
+                <br>There was a time where r hands were legs
+                <br>With no thought, money makes them beg
+                <br>
+                <br>People wanted to see us laugh and smile
+                <br>Now can’t see r happy faces for a while!
+                <br>I remember my elders offering me gift
+                <br>Now what I see isn’t a quarrel but a rift
+                <br>
+                <br>Once, there were friends all around
+                <br>Assuming that friendship has no bounds
+                <br>Now what I see r a few people together
+                <br>Who change themselves just like a weather
+                <br>
+                <br>There was a time when no one betrayed
+                <br>All the hidden grudges used to slowly fade
+                <br>Now people just separate their ways
+                <br>How easily they move on, I often amaze
+                <br>
+                <br>Life was life then, now it’s just a ride
+                <br>All what a person need is his own pride
+                <br>Feelings of others r no more important
+                <br>Now change has become d only constant
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>Hey, Please!</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-4.png">
+            </center>
+            <p>
+                <br>Hey, please don’t you love,
+                <br>Just love is not enough!
+                <br>Hey, please don’t you care,
+                <br>True bond is now so rare.
+                <br>
+                <br>Hey, please don’t you cry,
+                <br>Let your old scars dry!
+                <br>Hey, please don’t you fight,
+                <br>Even if you are always right!
+                <br>
+                <br>Hey, please don’t you wait,
+                <br>Try to believe on your fate!
+                <br>Hey, please don’t you plead,
+                <br>Try not to make them need!
+                <br>
+                <br>Hey, please don’t you move,
+                <br>Let your mistakes improve.
+                <br>I repeat, please don’t you love!
+                <br>Just love will never be enough!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>What did i want?</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-5.jpeg">
+            </center>
+            <p>
+                <br>What did i exactly expect?
+                <br>I just wanted to be heard.
+                <br>I just wanted to be loved.
+                <br>I just wanted a new world.
+                <br>
+                <br>What did i really ask for?
+                <br>I just wanted some attention.
+                <br>I just wanted to be the one.
+                <br>I just wanted to be the exception.
+                <br>
+                <br>What did I crave for?
+                <br>I just wanted to be noticed.
+                <br>I just wanted to be kissed.
+                <br>I just wanted to be treated like a gift
+                <br>
+                <br>What did i really pray for?
+                <br>I just wanted to be that smile.
+                <br>I just wanted to his reason.
+                <br>I just wanted to be loved for a while.
+                <br>I just wanted to be loved for a while.
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>A little Girl</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-6.jpeg">
+            </center>
+            <p>
+                <br>There lives a little girl,
+                <br>Embroiled with problems in her world!
+                <br>She has lost, now she is lost!
+                <br>Her childhood now seems so whirled!
+                <br>
+                <br>She smiles and convince everyone,
+                <br>Make them sure she is full of life!
+                <br>Inside, she dies like thousand times,
+                <br>When she is treated like a rife!
+                <br>
+                <br>The one who valued her is gone,
+                <br>She pretends she is okay and fine,
+                <br>Without him, she feels like a lost child,
+                <br>Her dad was the one who brought all shine!
+                <br>
+                <br>She just want a peaceful night,
+                <br>Give her pain all day, it’s alright!
+                <br>Yes, she can bear all the storms with a smile
+                <br>But please don’t always make her cry or hide!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>They say,</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-7.jpg">
+            </center>
+            <p>
+                <br>They say I am mean!
+                <br>They say I have no dream!
+                <br>what they don’t know is,
+                <br>In darkness, I sometimes scream!!
+                <br>
+                <br>They say my heart is a stone,
+                <br>They say am hard like a bone
+                <br>What they don’t know is
+                <br>There’s a child dying while am grown.
+                <br>
+                <br>They say I don’t care,
+                <br>They say I live in air.
+                <br>What they don’t know is
+                <br>Besides a listener, I am a Sayer.
+                <br>
+                <br>They say I lie,
+                <br>They say I don’t cry.
+                <br>What they don’t realise is,
+                <br>In somebody’s love, I daily die!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>He's a fighter!</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-8.jpg">
+            </center>
+            <p>
+                <br>His throat might be drying,
+                <br>His hopes might be crying.
+                <br>In his bed, he might be lying,
+                <br>To fight it, he might be trying.
+                <br>
+                <br>His chest might be bursting,
+                <br>His head might be hurting.
+                <br>His dreams might be reversing,
+                <br>His thoughts might be cursing.
+                <br>
+                <br>Yes, he might be feeling alone,
+                <br>His childish part might be grown.
+                <br>His legs might be hurting like stone,
+                <br>He might want support of any known!
+                <br>
+                <br>But he smiles and assures everyone,
+                <br>He says that life is normal and fun.
+                <br>He stays best as brother and a son,
+                <br>Although he goes through pain of tons.
+                <br>
+                <br>He’ll soon be fine and be here,
+                <br>Where all his dear ones would be near.
+                <br>Yaa, there’s a lot of pain he bears,
+                <br>But I know he’ll soon defeat all the fears!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>I was happy,</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-9.jpeg">
+            </center>
+            <p>
+                <br>I was happy, I bet he was too!
+                <br>I loved him once, surely, he did too,
+                <br>But see how quickly things change,
+                <br>Now he is angry, I have my rage too...
+                <br>
+                <br>He meant world, I was his too,
+                <br>When I laughed, he smiled too.
+                <br>But now we walk on different paths,
+                <br>He was a mistake, I was a lesson too.
+                <br>
+                <br>I was childish, sometimes he was too,
+                <br>When I used to irritate, he annoyed too.
+                <br>But now no one withstand our stupidness,
+                <br>I miss him, maybe he does too.
+                <br>
+                <br>He was not bad, maybe I wasn’t too.
+                <br>Just, I wasn’t for him, he might wasn’t too,
+                <br>Am very happy that we crossed our paths,
+                <br>But am happy like this, surely, he is too!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>Yes, she cares</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <br>
+                <img style="width: 20%;" src="p-10.jpeg">
+            </center>
+            <p>
+                <br>Yes, she cares, just doesn’t show,
+                <br>How she changed, she doesn’t know!
+                <br>Now she keeps her respect aside,
+                <br>Though she once had her ego!!
+                <br>
+                <br>Yes, she notices but stay quiet,
+                <br>Last thing she wants is to fight!
+                <br>But there, she hurts herself,
+                <br>And loses even if she’s right!
+                <br>
+                <br>To forget said words, she tries
+                <br>She wants that her scar dries
+                <br>She isn’t grown yet, she knows
+                <br>being a child, yes, she cries!
+                <br>
+                <br>Yes, she loves, but she denies
+                <br>Yes, she gets hurt, but she lies
+                <br>She hides behind a smile
+                <br>BCoz, she hates saying Goodbyes!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>Is it just me?</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 15%;" src="p-11.jpg">
+            </center>
+            <p>
+                <br>Is it me or love really hurts?
+                <br>I wanted peace, it felt like curse.
+                <br>It’s not that every second was pain,
+                <br>But some seconds were really worse.
+                <br>
+                <br>I stopped myself to love again,
+                <br>I knew that would give me pain.
+                <br>But yes, sometimes I just wish
+                <br>Someone to dance with me in rain!
+                <br>
+                <br>I found excuses to hold myself,
+                <br>I knew nobody could ever help,
+                <br>But sometimes I think what if,
+                <br>Someone can calm me when I yelp!
+                <br>
+                <br>I always tried to think this way,
+                <br>“From love, far away you stay.”
+                <br>But there are times where I want,
+                <br>Someone to listen what I say.
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>Her nightmares</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-12.jpeg">
+            </center>
+            <p>>
+                <br>There was a day with endless rain,
+                <br>Night filled with excruciating pain.
+                <br>It wasn’t a dream but a metaphor,
+                <br>Filled with fears of one insane.
+                <br>She felt boiling blood in her veins,
+                <br>She knew there was fret in her brain.
+                <br>She could see him there, lying lifeless,
+                <br>But, tries to save him were going in vain.
+                <br>
+                <br>Her life then turned to a moving train,
+                <br>A train that can’t choose a single lane.
+                <br>She saw close people in her life go,
+                <br>She had no thoughts, that help her sustain.
+                <br>She fought herself, she tried to refrain,
+                <br>She tried to find her happiness again.
+                <br>Yes, surely she found reasons to do so,
+                <br>But u know, it’s difficult to remove some stains.
+                <br>
+                <br>These nightmares come with no constrains,
+                <br>She fears but fights them without complain.
+                <br>She does try hard to forget dreadful past,
+                <br>But there’s a part of guilt, that always remain.
+                <br>Maybe someday peace her heart will attain,
+                <br>Someday strengths her dreams will regain,
+                <br>Maybe someday she’ll wake up with a smile,
+                <br>And share it with someone with a glass of champagne!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>And he moved on!</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-13.jpeg">
+            </center>
+            <p>
+                <br>Because of him I knew,
+                <br>What love really was.
+                <br>Now,he’s teachin’ some1 else,
+                <br>What it can do or cause!
+                <br>
+                <br>I am happy that he moves on,
+                <br>He finally will be heard!
+                <br>Maybe I wasn’t good enough,
+                <br>All those promises r now dirt!
+                <br>
+                <br>I hear people asking me,
+                <br>Why is it bothering me?
+                <br>I want someone to say,
+                <br>It’s ok to let your tears free.
+                <br>
+                <br>I know I don’t love him now,
+                <br>But our love still taunts me.
+                <br>How much I try to move on,
+                <br>Some of his actions still haunts me.
+                <br>
+                <br>Everything feels so messed up,
+                <br>I wish I never knew what love is.
+                <br>I wish that I now realise,
+                <br>Everything fuckin’ love does this!!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>To his girlfriend</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-14.jpeg">
+            </center>
+            <p>
+                <br>I remember he told me once,
+                <br>He won’t love as it gave pain.
+                <br>But I think you’re so special,
+                <br>That he now believes in it again!
+                <br>
+                <br>I thought he’ll come back one day,
+                <br>And give all reasons to move away.
+                <br>There must be something about you,
+                <br>That now with love, he’s okay!
+                <br>
+                <br>I thought he’ll be stuck like me,
+                <br>Maybe he wouldn’t also try.
+                <br>But m sure u came with light,
+                <br>N helped his all scars dry!
+                <br>
+                <br>I never thought he’ll return to say,
+                <br>He is finally into someone.
+                <br>You must be too important to him,
+                <br>Afterall, his heart, at once, you won!
+                <br>
+                <br>I thought I’ll be devastated,
+                <br>And never thought I would say.
+                <br>I’m happy he’s happy with you,
+                <br>N you’re both happy at d end of day!
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center>
+                <u><h1>I loved, agian!</h1></u>
+                <cite>Sameeksha Sauliwal</cite><br>
+                <img style="width: 20%;" src="p-15.jpeg">
+            </center>
+            <p>
+                <br>I actually waited for him,
+                <br>From sun’s first ray, till the lights turned dim.
+                <br>I actually hoped he’ll love too,
+                <br>N stand by my side through my thick n thin!
+                <br>
+                <br>I remember the day we met,
+                <br>I felt butterflies hopping in my heart!
+                <br>There was a spark in my eyes,
+                <br>But I knew it’ll end before it starts.
+                <br>
+                <br>We were irreparably broken,
+                <br>The last thing we wished was to love again.
+                <br>I had to pretend to shut my love,
+                <br>His smile was enough, though I lived in pain.
+                <br>
+                <br>I just wish to see him happy,
+                <br>I wish, to his miseries, I could be cure!
+                <br>I wish he realises someday soon,
+                <br>What I feel for him is real and sure.
+                <br>
+            </p>
+            <div class="heart-btn">
+                <div class="content">
+                    <span class="heart"></span>
+                    <span class="text">Like</span>
+                    <span class="numb"></span>
+                </div>
+            </div>
+            <br>
+            <br>
+            <hr>
+            <center><b><a href="option.html" style="color:black; font-size: large;">Back to MENU?</b> click!</center>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
